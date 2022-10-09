@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Gallery View",
-    'summary': "Defines the 'gallery' view",
+    'summary': """
+        Starting module for "Master the Odoo web framework, chapter 3: Create a Gallery View"
+    """,
+
     'description': """
-        Defines a new type of view ('awesome_gallery') which allows to visualize images.
+        Starting module for "Master the Odoo web framework, chapter 3: Create a Gallery View"
     """,
 
     'version': '0.1',
-    'depends': ['web'],
-    'data': [],
+    'application': True,
+    'category': 'Tutorials/AwesomeGallery',
+    'installable': True,
+    'depends': ['web', 'contacts'],
+    'demo': [
+        'views/views.xml',
+    ],
     'assets': {
         'web.assets_backend': [
             'awesome_gallery/static/src/**/*',
