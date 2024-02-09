@@ -3,7 +3,8 @@
 
     <t t-name="awesome_owl.playground">
         <div class="p-3">
-            hello world
+            <p t-esc="value1"/>
+            <p t-out="value2"/>
             <Counter/>
             <Counter/>
             <Card title="'Some Title'" content="'some content'"/>

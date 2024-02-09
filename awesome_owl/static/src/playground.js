@@ -1,10 +1,13 @@
 /** @odoo-module **/
 
-import { useState, Component } from "@odoo/owl";
+import { useState, markup, Component } from "@odoo/owl";
 import { Counter } from "./counter/counter";
 import { Card } from "./card/card";
 
 export class Playground extends Component {
     static template = "awesome_owl.playground";
     static components = { Counter, Card }; // tell Playground what it will need for the awesome_owl.playground template
+
+    value1 = "<div><strong>some text 1</strong></div>";
+    value2 = markup("<div><strong>some text 2</strong></div>")
 }
