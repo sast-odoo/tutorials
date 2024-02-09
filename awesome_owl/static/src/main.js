@@ -7,7 +7,7 @@ import { templates } from "@web/core/assets";
 
 // Mount the Playground component when the document.body is ready
 whenReady( () => {
-    mount(Playground, document.body, { templates, dev: true, name: "Owl Tutorial" });
+    mount(Playground, document.body, { templates, dev: true, name: "Owl Tutorial" }); // dev: true - puts it in dev mode
 });
 
 
