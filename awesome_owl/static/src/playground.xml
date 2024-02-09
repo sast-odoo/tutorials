@@ -6,6 +6,8 @@
             hello world
             <Counter/>
             <Counter/>
+            <Card title="'Some Title'" content="'some content'"/>
+            <Card title="'Another title'" content="'Some more content'"/> <!-- PASSING STRINGS AS PROPS REQUIRES INNER QUOTES!!! -->
         </div>
     </t>
 
