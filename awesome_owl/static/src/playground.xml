@@ -5,10 +5,11 @@
         <div class="p-3">
             <p t-esc="value1"/>
             <p t-out="value2"/>
-            <Counter/>
-            <Counter/>
+            <Counter onChange.bind="incrementSum"/> <!-- "onChange" is a prop of Counter; incrementSum is a function in playground -->
+            <Counter onChange.bind="incrementSum"/>
             <Card title="'Some Title'" content="'some content'"/>
             <Card title="'Another title'" content="'Some more content'"/> <!-- PASSING STRINGS AS PROPS REQUIRES INNER QUOTES!!! -->
+            <h1>Sum: <t t-esc="sum.value"/></h1>
         </div>
     </t>
 
